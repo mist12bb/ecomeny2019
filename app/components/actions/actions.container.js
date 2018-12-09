@@ -49,6 +49,10 @@ export default class ActionsIndex extends Component {
   }
   handleCategory = (cat_name)  => {
 
+    jsonServer.get(cat_name).then(({data})=>{
+      this.setState({actions: data})
+    })
+
     this.setState({CATEGORY_TYPE: cat_name});
 
   }

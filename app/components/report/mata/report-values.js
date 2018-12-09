@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { fetchActions } from './functions';
 
 
-export default class SumEctActions extends Component {
+export default class ReportValue extends Component {
   constructor(props) {
     super(props);
     this.state = {

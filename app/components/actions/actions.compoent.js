@@ -1,6 +1,6 @@
 import React from 'react';
 import { Feed, Card } from 'semantic-ui-react';
-import actionsCategoryMenu from './mata/select-acts-cat/actions-category.menu';
+import ActionsCategory from './mata/select-acts-cat/actions-category.menu';
 
 const Actions = ({actions, actionsRender, category, handleCategory}) => {
 
@@ -8,13 +8,14 @@ const Actions = ({actions, actionsRender, category, handleCategory}) => {
   return (
     <div className="actions-compoentent">
     <div className={"select-cateogry__menu"}>
-    <actionsCategoryMenu handleSelectCategory={handleCategory}/>
+    <ActionsCategory handleSelectCategory={handleCategory}/>
     </div>
       <div className="actions-compoentent__card">
           <Card>
             <Card.Content>
 
               <Card.Hader>
+              {category}
               </Card.Hader>
 
             </Card.Content>
