@@ -4,8 +4,8 @@ import {   Icon } from 'semantic-ui-react'
 
 /* import { onPutInit, url } from './util'; */
 import Axios from 'axios';
-import { options } from '../../../util';
-import { url, onPutInit } from '../../../util/api';
+import { options } from '../../../../../util';
+import { url, onPutInit } from '../../../../../util/api';
 
 
 export default class ActionPutInit extends Component {

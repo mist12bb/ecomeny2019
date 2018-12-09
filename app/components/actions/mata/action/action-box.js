@@ -3,10 +3,10 @@ import {  Feed, Icon } from 'semantic-ui-react'
 import { withState } from "recompose";
 
 /* me */
-import RemoveModal from "./modals/remove.modal";
 import "./act.style.css"
 import ActionInited from "./mata/init.front";
 import ActionPutInit from "./mata/init.back";
+import removeConfirmModal from "./mata/remove-confirm.modal";
 /* me */
 
 
@@ -40,9 +40,9 @@ import ActionPutInit from "./mata/init.back";
                 <ActionPutInit action={action} category={category} setActionsOnInitAction={(data)=>{
                   setActions(data)
                 }}/>
-             <RemoveModal className={"action-box__rem-btn"} onDeleteAction={()=>{onClickDel(i)}}>
+             <removeConfirmModal className={"action-box__rem-btn"} onDeleteAction={()=>{onClickDel(i)}}>
              {/* <Icon name="remove circle"/> */}
-             </RemoveModal>
+             </removeConfirmModal>
              <button style={{all: "unset", cursor:"pointer"}}
              onClick={(e)=>{
                onClickSave(action)
