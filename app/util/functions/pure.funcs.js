@@ -1,16 +1,24 @@
 import { url } from "../api/index";
 
 
-export const onSaveActionApi = (category, id, action) => {
+ const onSaveActionApi = (category, id, action) => {
   Axios.post(url+"/"+category);
 }
-export const onDelActionApi = (category, id) => {
+ const onDelActionApi = (category, id) => {
   Axios.delete(`${url}/${category}/${id}`);
 }
-export const onSaveActionFront = (category, id, action) => {
+ const onSaveActionFront = (category, id, action) => {
   Axios.post(url+"/"+category);
 }
 
-export const onPutInit = (act, init, id, category) =>{
+ const onPutInit = (act, init, id, category) =>{
   Axios.put(`${url}/${category}/${id}`, {...act, init: init});
 };
+
+
+export default {
+  onSaveActionApi,
+  onDelActionApi,
+  onPutInit,
+  onSaveActionFront
+}
