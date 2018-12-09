@@ -1,13 +1,13 @@
 import React from "react";
 import {  Feed, Icon } from 'semantic-ui-react'
 import { withState } from "recompose";
+
+/* me */
 import RemoveModal from "./modals/remove.modal";
-
-
 import "./act.style.css"
-import ActionInit from "./action.init";
-import ActionPutInit from "./actions.put.init";
-
+import ActionInited from "./mata/init.front";
+import ActionPutInit from "./mata/init.back";
+/* me */
 
 
  const Action = ({onClickDel, onClickSave, i, action, onInit, init, onInilze, category, setActions}) =>  {
@@ -33,7 +33,7 @@ import ActionPutInit from "./actions.put.init";
                   onInilze(action.id, init, action);
 
                 }}></ Checkbox> */}
-               <ActionInit init={action.init}/>
+               <ActionInited init={action.init}/>
                 </Feed.Event>
              </Feed.Content>
              <Feed.Meta>
