@@ -1,0 +1,12 @@
+.form__inputs >.form__sys{
+  padding-top: 20px;
+  
+  background: snow;
+  width: 260px;
+  display: grid;
+  place-content: center;
+}
+.form__select {
+  width: 30px;
+  
+}

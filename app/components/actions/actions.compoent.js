@@ -1,7 +1,7 @@
 import React from 'react';
 import { Feed, Card } from 'semantic-ui-react';
 import ActionsCategory from './mata/select-acts-cat/actions-category.menu';
-
+import "../../util/style/actions.style/actions.style.css"
 const Actions = ({actions, actionsRender, category, handleCategory}) => {
 
 

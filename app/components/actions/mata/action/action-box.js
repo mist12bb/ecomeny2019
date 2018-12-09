@@ -3,7 +3,7 @@ import {  Feed, Icon } from 'semantic-ui-react'
 import { withState } from "recompose";
 
 /* me */
-import "./act.style.css"
+import "../../../../util/style/actions.style/action.style.css"
 import ActionInited from "./mata/init.front";
 import ActionPutInit from "./mata/init.back";
 import removeConfirmModal from "./mata/remove-confirm.modal";

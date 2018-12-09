@@ -1,0 +1,23 @@
+.amount-lable {
+  display: grid !important;
+  place-content: center ;
+  
+}
+.amount-lable >p.amount-lable__text {
+  font-size: 20px;
+  
+}
+input[type="checkbox"] {
+  padding-top: 5px;
+}
+.action-box__rem-btn {
+  all: unset;
+  cursor: pointer
+}
+.actions__all {
+  margin: 30px;
+  margin-top: 0;
+}
+.ui.card:last-child {
+  margin: 40px;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { withState } from 'recompose';
-
+import "../../../../util/style/actions.style/actions-category-menu.style.css"
 const ActionsCateogry = ({activeItem, onActiveItem , handleSelectCategory}) => {
   return (
     <div className={"actions-category-menu"}>
