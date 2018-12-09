@@ -10,7 +10,8 @@ import removeConfirmModal from "./mata/remove-confirm.modal";
 /* me */
 
 
- const Action = ({onClickDel, onClickSave, i, action, onInit, init, onInilze, category, setActions}) =>  {
+ const Action = ({action, onMataFunc, i, category, setActions}) =>  {
+   let {onSave, onSaveApi, onDel, onDelApi} = onMataFunc;
   return (
     <Feed.Event key={i} >
              <Feed.Label
